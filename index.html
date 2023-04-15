@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fun with HTML5 Canvas</title>
+</head>
+<body class="bg-slate-400">
+
+    <div class="setting flex justify-evenly mx-auto mt-[50px] mb-[10px] w-[300px]">
+        <input type="color" id="color" class="color hidden">
+        <label for="color" class="bg-[url('/images/palette.png')] bg-no-repeat bg-cover w-[24px] h-[24px] cursor-pointer" title="color palette"></label>
+        <div class="eraser bg-[url('images/eraser.png')] bg-no-repeat bg-cover w-[24px] h-[24px] cursor-pointer" title="Eraser"></div>
+        <input type="range"  min="5" max="50" value="5" class="range rotate-[-90deg] hidden">
+        <label for="pen" class="labelRange bg-[url('images/pen.png')] bg-no-repeat bg-cover w-[24px] h-[24px] cursor-pointer" title="Size"></label>
+        <div class="rainbow bg-[url('images/rainbow.png')] bg-no-repeat bg-cover w-[24px] h-[24px] cursor-pointer" title="rainbow color"></div>
+    </div>
+    <canvas id="draw" width="800" height="800" class="border-[2px] border-black m-auto rounded-lg shadow-2xl cursor-crosshair"></canvas>
+    <script src="index.js"></script>
+</body>
+</html>
